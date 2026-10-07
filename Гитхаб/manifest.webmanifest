@@ -1,0 +1,8 @@
+{
+  "name": "кофеварька",
+  "short_name": "кофеварька",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4efe7",
+  "theme_color": "#171513"
+}

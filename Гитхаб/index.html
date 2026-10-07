@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#181614">
+  <meta name="description" content="кофеварька — независимая кофейня с кофе, холодными напитками и десертами. Место для спокойных пауз и хорошего вкуса.">
+  <meta property="og:title" content="кофеварька — кофе с характером">
+  <meta property="og:description" content="Кофе, холодные напитки и десерты. Место для спокойных пауз.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <title>кофеварька — кофе с характером</title>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CafeOrCoffeeShop",
+    "name":"кофеварька",
+    "description":"Независимая кофейня с кофе, холодными напитками и десертами.",
+    "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:30","closes":"21:30"}],
+  }
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<header class="site-header">
+  <div class="container header__inner">
+    <a class="logo" href="#top" aria-label="кофеварька — наверх"><span class="logo__mark" aria-hidden="true"><i></i><i></i><i></i></span><span class="logo__word">кофеварька</span></a>
+    <nav class="desktop-nav" aria-label="Основная навигация"><a href="#menu">Меню</a><a href="#about">О нас</a><a href="#contact">Контакты</a></nav>
+    <button class="cart-trigger" id="cartTrigger" aria-controls="cartDialog" aria-expanded="false"><span>Корзина</span><b id="cartCount">0</b></button>
+    <button class="mobile-menu-trigger" id="menuTrigger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileNav">☰</button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Мобильная навигация" hidden>
+    <div class="container"><a href="#menu">Меню</a><a href="#about">О нас</a><a href="#contact">Контакты</a><button id="mobileCartTrigger">Открыть корзину <span id="mobileCartCount">0</span></button></div>
+  </nav>
+</header>
+<main id="main" tabindex="-1">
+<section class="hero section-pad" id="top" aria-labelledby="heroTitle">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <div class="eyebrow-row"><span class="eyebrow">Независимая кофейня</span><span class="eyebrow-line"></span></div>
+      <h1 id="heroTitle">Кофе,<br><em>который</em><br>остаётся.</h1>
+      <p class="hero__lead">Небольшое место для больших пауз. Сварили, подали, не стали ничего усложнять.</p>
+      <div class="hero__actions"><a class="button button--dark" href="#menu">Смотреть меню <span>↘</span></a><a class="button button--ghost" href="#about">О нас <span>↗</span></a></div>
+      <div class="hero__micro"><span>01</span><span>Кофе / Холодное / Сладкое</span></div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__image-frame"><img src="assets/hero.webp" width="1000" height="1080" alt="Эспрессо и капучино в спокойном интерьере кофейни" fetchpriority="high"></div>
+      <div class="hero__caption"><span>Городская тишина</span><strong>07:30 — 21:30</strong></div>
+      <div class="hero__seal" aria-hidden="true"><span>Без<br>лишнего</span></div>
+    </div>
+  </div>
+  <div class="container hero__ticker"><span>Эспрессо</span><span>Капучино</span><span>Колд брю</span><span>Матча-тоник</span><span>Круассан</span><span>+ ещё 16 позиций</span></div>
+</section>
+<section id="menu" class="menu-section section-pad" aria-labelledby="menuTitle">
+  <div class="container">
+    <div class="section-heading"><div><span class="eyebrow">Меню / 21 позиция</span><h2 id="menuTitle">Выбирай<br><em>по настроению.</em></h2></div><p>В карте — классика, которая не просит представления, и несколько вещей для тех дней, когда хочется свернуть с привычного маршрута.</p></div>
+    <div class="filter-row" id="filters" role="tablist" aria-label="Категории меню"></div>
+    <div class="products-grid" id="productGrid" aria-live="polite"></div>
+    <div class="menu-note"><span>Сезонность</span><p>Некоторые позиции могут исчезать на день-другой. Это не ошибка — просто у хорошего продукта иногда есть своё расписание.</p></div>
+  </div>
+</section>
+<section id="about" class="about-section section-pad" aria-labelledby="aboutTitle"><div class="container about-grid"><div class="about__visual"><img src="assets/interior.webp" width="1000" height="980" loading="lazy" alt="Светлый интерьер кофейни с большим окном и деревянным столом"><div class="about__stamp">Основано<br>на паузах</div></div><div class="about__copy"><span class="eyebrow">О нас</span><h2 id="aboutTitle">Место,<br><em>куда идут</em><br>не только за кофе.</h2><p>«Кофеварька» — маленькая кофейня про ритм города без городской суеты. Мы любим ровный свет, хорошие зёрна, тёплую керамику и разговоры, которые начинаются с «давай ещё пять минут».</p><p>Здесь не нужно успевать всё. Можно выпить эспрессо стоя. Можно засесть у окна. Можно забрать синнабон домой, потому что он слишком хорош, чтобы делить его с кем-то.</p><div class="facts"><div><strong>02</strong><span>Метода<br>заваривания</span></div><div><strong>21</strong><span>Позиция<br>в карте</span></div><div><strong>7/7</strong><span>Открыты<br>каждый день</span></div></div></div></div></section>
+<section class="manifesto section-pad"><div class="container manifesto__inner"><span class="eyebrow">Маленький манифест</span><p>«Хороший кофе не требует<br><em>громкого голоса.</em>»</p></div></section>
+<section id="contact" class="contact-section section-pad" aria-labelledby="contactTitle"><div class="container contact-grid"><div class="contact__intro"><span class="eyebrow">Контакты</span><h2 id="contactTitle">Заходи,<br><em>мы здесь.</em></h2><a class="route-button" href="https://www.google.com/maps/search/?api=1&query=Мюнхен+кофейня" target="_blank" rel="noopener noreferrer">Построить маршрут <span>↗</span></a></div><div class="contact__details"><div class="contact-card"><span>⌖</span><div><label>Адрес</label><strong>placeholder address<br>München, DE</strong></div></div><div class="contact-card"><span>◷</span><div><label>Часы</label><strong>Ежедневно<br>07:30 — 21:30</strong></div></div><div class="contact-card"><span>⌕</span><div><label>Телефон</label><a href="tel:+490000000000">+49 000 000 00 00</a></div></div><div class="contact-card"><span>✉</span><div><label>Почта</label><a href="mailto:hello@kofevarka.example">hello@kofevarka.example</a></div></div><div class="contact-card"><span>◎</span><div><label>Соцсеть</label><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></div></div></div></div></section>
+</main>
+<footer class="site-footer"><div class="container footer__top"><a class="logo" href="#top" aria-label="кофеварька — наверх"><span class="logo__mark" aria-hidden="true"><i></i><i></i><i></i></span><span class="logo__word">кофеварька</span></a><nav class="footer__nav" aria-label="Навигация подвала"><a href="#menu">Меню</a><a href="#about">О нас</a><a href="#contact">Контакты</a><a href="privacy.html">Privacy</a></nav><div class="footer__hours"><span>Ежедневно</span><strong>07:30 — 21:30</strong></div></div><div class="container footer__bottom"><span>© 2026 кофеварька</span><span>Сделано для людей, которые любят паузы</span></div></footer>
+<div class="cart-overlay" id="cartOverlay" hidden><button class="cart-scrim" id="cartScrim" aria-label="Закрыть корзину"></button><aside class="cart-drawer" id="cartDialog" role="dialog" aria-modal="true" aria-labelledby="cartTitle"><header class="cart-drawer__header"><div><span class="eyebrow">Заказ</span><h2 id="cartTitle">Корзина</h2></div><button id="cartClose" class="close-button" aria-label="Закрыть корзину">×</button></header><div id="cartContent"></div></aside></div>
+<script src="script.js" type="module"></script>
+</body>
+</html>
